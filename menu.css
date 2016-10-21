@@ -2,7 +2,7 @@
 Add your Google Fonts
 Update ALL the named colours to create a monochromatic scheme
 Style the menus - one horizontally and one vertically
-Add the hover/active effects to your menu items 
+Add the hover/active effects to your menu items
 ***************************************************/
 *{
     padding: 0;
@@ -57,6 +57,7 @@ header{
         float: left;
         width: 20%;
         list-style: none;
+        text-align: center;
         /* style the list items to remove the bullets 
         and line up horizontally
         and take up 20% of the width of the ul */
@@ -66,6 +67,8 @@ header{
         .menu-h a:visited{
             /* style the anchors to fill the entire width of the li 
             make sure there is padding around your text */
+            display: block;
+            color: #CC9E69;
         }
         .menu-h a:hover,
         .menu-h a:active{
@@ -80,6 +83,7 @@ header{
         width: 100%;
         list-style: none;
         display: block;
+        width:100%;
         /* style the list items to remove the bullets 
         and line up vertically
         and take up 100% of the width of the ul */
@@ -89,13 +93,18 @@ header{
         .menu-v a:visited{
             width:100%;
             /* style the anchors to fill the entire width of the li */
+            display: block;
+            text-align:center;
+            color: #7F6E5A;
         }
         .menu-v a:hover,
         .menu-v a:active{
+            color: #FFC684;
             border-top: 4px solid #7F6342;
             border-right: 4px solid #FFC684;
             border-bottom: 4px solid #FFC684;
             border-left: 4px solid #7F6342;
+            margin: -4px 0px -4px 0px;
         }
 main{
     width:80%;
